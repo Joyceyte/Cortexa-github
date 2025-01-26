@@ -1,19 +1,20 @@
-import { useState } from "react";
-import { app, database } from "../firebaseconfig";
-import {
+//import { useState } from "react";
+//import { app, database } from "../firebaseconfig";
+/*import {
   collection,
   addDoc,
   getDocs,
   doc,
   updateDoc,
 } from "firebase/firestore";
-import { Label, TextInput, Button } from "flowbite-react";
-import { Table } from "flowbite-react";
+*/
+//import { Label, TextInput, Button } from "flowbite-react";
+//import { Table } from "flowbite-react";
 import MakeCallComponent from "../MakeCall";
 import ChatBox from "./ChatBox";
 
-
 function AnalyticsPage() {
+  /*
   const [data, setData] = useState({});
   const collectionRef = collection(database, "users");
 
@@ -60,11 +61,10 @@ function AnalyticsPage() {
       .ctch((err) => {
         alert(err.message);
       });
-  };
+  }; */
 
   return (
-    <div className = "m-4">
-
+    <div className="m-4">
       {/*  <div className="flex max-w-md flex-col gap-4 p-8">
         <div>
           <div className="mb-2 block">
@@ -81,9 +81,9 @@ function AnalyticsPage() {
 
         <Button onClick={updateData}> Submit</Button>
       </div>*/}
-      <ChatBox/>
-      <div className = "flex justify-center items-center min-h-screen">
-      <MakeCallComponent />
+      <ChatBox />
+      <div className="flex justify-center items-center min-h-screen">
+        <MakeCallComponent />
       </div>
       {/*      <div className="overflow-x-auto">
         <Table>
@@ -147,8 +147,7 @@ function AnalyticsPage() {
             </Table.Row>
           </Table.Body>
         </Table>
-      </div>*/ }
-
+      </div>*/}
     </div>
   );
 }
